@@ -32,7 +32,6 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)premiumoutlets\.co\.jp$/.test(host)) return "+Lantern";
         if (/(?:^|\.)tvcdn\.de$/.test(host)) return "+Lantern";
         if (/(?:^|\.)geelou\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)redis\.io$/.test(host)) return "+Lantern";
         if (/(?:^|\.)steelhousemedia\.com$/.test(host)) return "+Lantern";
         if (/(?:^|\.)duotai\.org$/.test(host)) return "+Lantern";
         if (/(?:^|\.)apache\.org$/.test(host)) return "+Lantern";
@@ -40,9 +39,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)logcg\.com$/.test(host)) return "+Lantern";
         if (/(?:^|\.)trustedsite\.com$/.test(host)) return "+Lantern";
         if (/(?:^|\.)drcleaner\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)youtube\.com$/.test(host)) return "+Lantern";
         if (/(?:^|\.)ytimg\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)google\.com$/.test(host)) return "+Lantern";
         if (/(?:^|\.)ggpht\.com$/.test(host)) return "+Lantern";
         return "+__ruleListOf_GFWList Auto Proxy";
     },

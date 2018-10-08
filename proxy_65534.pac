@@ -9,40 +9,7 @@ var FindProxyForURL = function(init, profiles) {
         return result;
     };
 }("+GFWList Auto Proxy", {
-    "+GFWList Auto Proxy": function(url, host, scheme) {
-        "use strict";
-        if (/(?:^|\.)facebook\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)paypalobjects\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)doubleclick\.net$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)paypal\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)cww2\.net$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)linearicons\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)sublimetext\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)apple\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)github\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)omnigroup\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)jetbrains\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)fbcdn\.net$/.test(host)) return "+Lantern";
-        if (/(?:^|\.).*\.cloudfront\.net$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)twitter\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)gyazsquare\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)googlevideo\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)im-apps\.net$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)yext-static\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)premiumoutlets\.co\.jp$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)tvcdn\.de$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)geelou\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)steelhousemedia\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)duotai\.org$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)apache\.org$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)lanhuapp\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)logcg\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)trustedsite\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)drcleaner\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)ytimg\.com$/.test(host)) return "+Lantern";
-        if (/(?:^|\.)ggpht\.com$/.test(host)) return "+Lantern";
-        return "+__ruleListOf_GFWList Auto Proxy";
-    },
+    "+GFWList Auto Proxy": "+__ruleListOf_GFWList Auto Proxy",
     "+__ruleListOf_GFWList Auto Proxy": function(url, host, scheme) {
         "use strict";
         if (/^https:\/\/share\.dmhy\.org/.test(url)) return "DIRECT";

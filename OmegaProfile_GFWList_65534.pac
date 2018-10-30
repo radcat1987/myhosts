@@ -9,7 +9,38 @@ var FindProxyForURL = function(init, profiles) {
         return result;
     };
 }("+GFWList_65534", {
-    "+GFWList_65534": "+__ruleListOf_GFWList_65534",
+    "+GFWList_65534": function(url, host, scheme) {
+        "use strict";
+        if (/(?:^|\.)baidu\.com$/.test(host)) return "DIRECT";
+        if (/(?:^|\.)gyazsquare\.com$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)segment\.com$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)d2wy8f7a9ursnm\.cloudfront\.net$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)d36jcksde1wxzq\.cloudfront\.net$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)docker\.com$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)google\.com$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)strikinglycdn\.com$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)macenjoy\.co$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)marketo\.net$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)jetbrains\.com$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)ibm\.com$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)s81c\.com$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)cmcore\.com$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)coremetrics\.com$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)truste\.com$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)tiqcdn\.com$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)crwdcntrl\.net$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)mybluemix\.net$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)chileforma\.cl$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)youtube\.com$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)googlevideo\.com$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)shadowsocks\.org$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)8686c\.com$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)macpaw\.com$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)github\.com$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)markdownguide\.org$/.test(host)) return "+HTTP_65534";
+        if (/(?:^|\.)getpostman\.com$/.test(host)) return "DIRECT";
+        return "+__ruleListOf_GFWList_65534";
+    },
     "+__ruleListOf_GFWList_65534": function(url, host, scheme) {
         "use strict";
         if (/^https:\/\/share\.dmhy\.org/.test(url)) return "DIRECT";
